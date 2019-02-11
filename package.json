@@ -1,0 +1,13 @@
+{
+  "name": "itachi",
+  "version": "1.0.0",
+  "main": "itachi.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^10.12.24",
+    "discord.js": "discordjs/discord.js",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.13.0",
+    "tslint": "^5.12.1"
+  }
+}
