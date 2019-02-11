@@ -1,6 +1,6 @@
 import { Message } from 'discord.js';
-import { Command } from '../structures/Command';
-export class Test extends Command {
+import { Command } from '../structures/base/Command';
+module.exports = class Test extends Command {
   constructor(){
     super({
       name: 'test',
@@ -13,7 +13,7 @@ export class Test extends Command {
       ownerOnly: false
     });
   }
-  public async execute(message: Message, args: string[]) {
+  async execute(message: Message, args: string[]) {
     await message.channel.send('hi');
   }
 }

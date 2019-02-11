@@ -1,6 +1,6 @@
-import { Itachi } from './Itachi';
+import { Itachi } from '../Itachi';
 import { PermissionResolvable, Message, Permissions } from 'discord.js';
-import { CommandInfo } from '../types/CommandInfo';
+import { CommandInfo } from '../../types/CommandInfo';
 export abstract class Command {
   private _disabled!: boolean;
 
@@ -38,8 +38,9 @@ export abstract class Command {
 
   };
   public async execute(message: Message, args: string[]): Promise <void> {};
-  private enable(): void { this._disabled = false; };
-  private disable(): void { this._disabled = true; };
+  public get disabled(): boolean { return this._disabled; };
+  public enable(): void { this._disabled = false; };
+  public disable(): void { this._disabled = true; };
   private _validatePermissions(field: string, perms: PermissionResolvable[]): void
 	{
 		let errString: (i: number, err: any) => string = (i, err) =>

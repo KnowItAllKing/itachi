@@ -1,6 +1,6 @@
 export type BaseOptions = {
-  token?: string;
+  token: string;
   owner?: string;
-  commandsDir?: string;
-  eventsDir?: string;
+  commandsDir: string;
+  eventsDir: string;
 };
