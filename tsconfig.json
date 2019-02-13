@@ -6,8 +6,7 @@
         "module": "commonjs",
         "sourceMap": false,
         "noImplicitAny": false,
-        "removeComments": true,
-        "watch": true
+        "removeComments": true
     },
     "include": [
         "src/**/*"

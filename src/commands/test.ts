@@ -3,7 +3,7 @@ import { Command } from '../structures/base/Command';
 module.exports = class Test extends Command {
   constructor(){
     super({
-      name: 'test',
+      name: 'Test',
       description: 'Test command',
       usage: '`prefix test`',
       aliases: ['tester'],

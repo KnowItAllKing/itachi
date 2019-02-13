@@ -4,8 +4,8 @@ export class Itachi extends BaseClient {
     super({
       token: token,
       owner: '517016133694521374',
-      commandsDir: './commands',
-      eventsDir: './events'
+      commandsDir: 'commands',
+      eventsDir: 'events'
       }, options);
   };
 };
